@@ -51,6 +51,20 @@ end)
     end
 end)
 
+MainSection:NewToggle("Blue Flame", "Flame Color Effect Will Be Blue Now.", function(arg)
+if arg then
+game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.Tick.Visible = true
+    game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.BlueFlame.Style = "RobloxRoundButton"
+        game:GetService("Players").LocalPlayer.PlayerGui.Start.PowerShot.Image = "rbxassetid://5366457711"
+        game:GetService("Players").LocalPlayer.Backpack.FValue.Value = 2
+    else
+        game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.Tick.Visible = false
+    game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.BlueFlame.BlueFlame.Style = "RobloxRoundDefaultButton"
+        game:GetService("Players").LocalPlayer.PlayerGui.Start.PowerShot.Image = "rbxassetid://1595877615"
+       game:GetService("Players").LocalPlayer.Backpack.FValue.Value = 1
+    end
+end)
+
 MainSection:NewToggle("Frozen Ball", "Freezes The Flame Ball When It Touched You. Ice Is NON-FE", function(arg)
 if arg then
 game:GetService("Players").LocalPlayer.PlayerGui.Start.GamePassMenu.Items.Frozen.Tick.Visible = true
