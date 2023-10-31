@@ -5,7 +5,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 Duration = 5;
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Gamepass, Qura W Pyth", "Ocean")
+local Window = Library.CreateLib("Gamepass, Qura", "Ocean")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
